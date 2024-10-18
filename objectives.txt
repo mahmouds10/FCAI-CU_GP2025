@@ -1,0 +1,3 @@
+Objectives
+
+The Alzheimer's Care app aims to support intermediate-level Alzheimer's patients by providing medication alerts and monitoring safe zones through geolocation. Caregivers receive real-time notifications if a patient leaves a designated safe zone or misses medication, ensuring safety and effective management while enhancing patient independence, and this will reduce the patient's feeling of being a burden on those closest to him.
