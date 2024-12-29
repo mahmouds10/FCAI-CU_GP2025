@@ -33,7 +33,7 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="Entity" />
-        <value>7</value>
+        <value>9</value>
       </counter>
       <counter>
         <item-type type-id="enumeration" type="Enumeration" />
@@ -47,7 +47,7 @@
       </counter>
       <counter>
         <item-type type-id="property" type="Property" />
-        <value>191</value>
+        <value>200</value>
       </counter>
       <counter>
         <item-type type-id="generalization" type="Generalization" />
@@ -99,11 +99,11 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="Entity" />
-        <value>8</value>
+        <value>10</value>
       </counter>
       <counter>
         <item-type type-id="erd-relationship" type="Relationship" />
-        <value>24</value>
+        <value>25</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -131,7 +131,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Erd.ErdEntityAttribute</type>
-        <value>23</value>
+        <value>27</value>
       </counter>
     </fields>
   </counters>
@@ -2142,6 +2142,33 @@
     <item id="7180b5ae4f6343e8b84e8ed7dd3ec05f" cid="ELEM019" type="property" owner="cfcb4f35b8a44cdd950ca154570130ba" creator="" creation-date="12/27/2024 14:34:51" visibility="undefined">
       <structural-feature type="Caregiver" type-id="Class:a7c323a18ad64434bf9a1539b8e8c3ea" />
     </item>
+    <item id="4077df7475734762b300c2562e6db3f9" cid="C021" type="class" name="MedicalRecord" creation-date="12/27/2024 15:39:35" visibility="undefined">
+      <owned-items />
+      <attributes>
+        <attribute id="bb6d464c1bdc49fcab093fe13a7068eb" cid="PROP193" veid="a9d6bf96bc33e4181b82d1f177b787eb1975" name="RecordID" creation-date="12/27/2024 15:43:42" property-ref="6d0f0a56637a4a6eb0eab7c2e83b6f27" />
+        <attribute id="4fc12a25d570491e857bc8482433cdb5" cid="PROP194" veid="a0fbc948c50fe4cf7b62d34d10a3957f8494" name="StartDate" creation-date="12/27/2024 15:43:51" property-ref="636b30d8a9a0410a945229ec3349957b" />
+        <attribute id="7575f59a43fd4abcbd28fe9549ecf865" cid="PROP195" veid="a72653a33feba4d59afc65f52a468123e242" name="EndDate" creation-date="12/27/2024 15:43:56" property-ref="f3608b14909f494e80ece47565f406b0" />
+        <attribute id="cb85833eb1f447f387ca5af177d6c10b" cid="PROP196" veid="aff2cf03a4f4a411cbb3e3b477041c6cb914" name="Type" creation-date="12/27/2024 15:44:10" property-ref="48da614bbc3649b5a7fc320501837189" />
+        <attribute id="ae454643f072410d876553c2e894e422" cid="PROP197" veid="a3ec6b561b6ab4f069575e6ab2384ca7d976" name="Details" creation-date="12/27/2024 15:44:14" property-ref="36e8085025e04225bb00cbfe563fdff7" />
+        <attribute id="56821c4a518546999cad3bc75aaf35a8" cid="PROP198" veid="afa23ad380a0548be877955968a52bf7b311" name="Dose" creation-date="12/27/2024 15:44:19" property-ref="c3c1f8b140fa452bb4f176f50cafe039" />
+      </attributes>
+      <operations>
+        <operation id="ed968b2350604e67b0db212c5ca043a6" cid="OP040" veid="oa768fffdc69e470cbdd9540172d397bf209" name="MedicalRecord" creation-date="12/27/2024 15:46:12" type="" type-id="" visibility="public">
+          <parameters>
+            <parameter id="pee8ec0866a594f05afea09b1420f613b" name="startDate" type="" type-id="" creation-date="12/27/2024 15:46:12" />
+            <parameter id="pe0ce45939dc041a786bc2944f08585ef" name="type" type="" type-id="" creation-date="12/27/2024 15:46:12" />
+            <parameter id="p3a8c938a0f514f8bb41f0acfb06fd0c5" name="details" type="" type-id="" creation-date="12/27/2024 15:46:12" />
+            <parameter id="p984397d36548430fbb483d9a68716023" name="dose" type="" type-id="" creation-date="12/27/2024 15:46:12" />
+          </parameters>
+          <stereotypes>
+            <stereotype>create</stereotype>
+          </stereotypes>
+        </operation>
+      </operations>
+      <source-codes>
+        <source-code language="ActionScript" />
+      </source-codes>
+    </item>
     <item id="814ef6ebc81d4fdc9c6aeed487b07181" cid="ELEM008" type="signal" name="das" owner="552d52b8cd4d468fb34e8eba3347e898" creator="" creation-date="12/27/2024 14:13:15" visibility="undefined" />
     <item id="2999611e16b142909bc35593dc637cdf" cid="ELEM009" type="property" name="Posts" owner="a7c323a18ad64434bf9a1539b8e8c3ea" creator="" creation-date="12/27/2024 14:20:24" visibility="private">
       <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
@@ -2928,6 +2955,19 @@
       </style>
       <structural-feature type="String" type-id="Uml.String" />
     </item>
+    <item id="6a5b93bb5ffc433fae53b23856ca60e3" cid="C022" type="class" name="MedicalHistory" creation-date="12/27/2024 15:46:47" visibility="undefined">
+      <owned-items />
+      <attributes>
+        <attribute id="ddb38c075d95449bb1efcf43c1ba6b56" cid="PROP199" veid="ad954aa98874d46fe85bc81bad7b1a3d8577" name="MedicalHistory" creation-date="12/27/2024 15:48:39" property-ref="81db226413d3406a8a57b9c64bafe77e" />
+      </attributes>
+      <operations>
+        <operation id="8e8afbfd723743c887ae79525d5e99bc" cid="OP041" veid="od5fff682ad144a8bbbeb6d6c8789d1b1634" name="addRecord" creation-date="12/27/2024 15:49:12" type="" type-id="" visibility="public" />
+        <operation id="39cf56c968b44602b0175f8ef83e7d1d" cid="OP042" veid="o25e7e79457e34a77a0dc70ba969b838a139" name="retriveHistory" creation-date="12/27/2024 15:49:19" type="" type-id="" visibility="public" />
+      </operations>
+      <source-codes>
+        <source-code language="ActionScript" />
+      </source-codes>
+    </item>
     <item id="3e08fbc755064842bb1543fec8fde50f" cid="ELEM082" type="property" name="Details" owner="e63625a12d6d4fc09ff3cf377799f1c8" creator="" creation-date="12/27/2024 15:44:14" visibility="private">
       <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
         <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
@@ -3406,24 +3446,6 @@
     <item id="2b5bf51aca4f40a8b05c715da85b3ba4" cid="ELEM031" type="property" owner="1fadbb7331984ce491f0dbd3414caf2c" creator="" creation-date="12/27/2024 14:44:23" visibility="undefined">
       <structural-feature multiplicity="1" type="CommunityPost" type-id="Class:d9a78be5b3d8409d857ee8316acebf3a" />
     </item>
-    <item id="2ff51fc3e9ee47e4a85f33e3c46309fe" cid="C020" type="class" name="SafeZone" creation-date="12/27/2024 15:30:54" visibility="undefined">
-      <owned-items />
-      <attributes>
-        <attribute id="531cb0efdfe4472287a1b340c52234b5" cid="PROP184" veid="a9a096a4d50fd4c42b1d95cc53a378125485" name="ZoneID" creation-date="12/27/2024 15:31:30" property-ref="1822ba0fe9d044cda7c1e68dc2d41912" />
-        <attribute id="e385710312ba49318030eaa4273910cf" cid="PROP185" veid="ac34a700c2a624c6bad286e670cef74ff392" name="PatientID" creation-date="12/27/2024 15:31:36" property-ref="7fcd1ba201944cf5b9e2213eb4f1d6f7" />
-        <attribute id="5ed2fd5415614c3ab328e537f7281917" cid="PROP186" veid="a94525729910f4811b16a6724c57da1e4624" name="ZoneName" creation-date="12/27/2024 15:31:48" property-ref="b6f6206f96494a93b8da31b34ca72d36" />
-        <attribute id="eff728110d004e11801df7b945acbdb7" cid="PROP187" veid="ac7ea73da391c45cfb4594d3478964573449" name="Radius" creation-date="12/27/2024 15:32:02" property-ref="2b7e2836dcef4b969c84b341249c9352" />
-        <attribute id="cac3228ede2941d2b8a12afa352b33c9" cid="PROP188" veid="ac8c3469f84424075aa8fe5037a438164775" name="Coordinates" creation-date="12/27/2024 15:32:07" property-ref="d2042e822adf4e8fa816f95cfe4f7afa" />
-      </attributes>
-      <operations>
-        <operation id="7d8c702e4fab4a8ba8d4c00c4594f97f" cid="OP037" veid="o53df88ccc29041cdb7d0878f8524ab63152" name="setCoordinates" creation-date="12/27/2024 15:37:00" type="" type-id="" visibility="public" />
-        <operation id="7156abf2f50f418e839029b811f41c75" cid="OP038" veid="o1a53de9566e9448f954bfbcceebd12bc565" name="updateRadius" creation-date="12/27/2024 15:37:10" type="" type-id="" visibility="public" />
-        <operation id="351d0e57b43c47a685a7a9c29fbd5871" cid="OP039" veid="of10e74c4704d4041825cf4c928a238e4500" name="notifyBreach" creation-date="12/27/2024 15:37:16" type="" type-id="" visibility="public" />
-      </operations>
-      <source-codes>
-        <source-code language="ActionScript" />
-      </source-codes>
-    </item>
     <item id="e78becd754b14354b18f8bdcd2ffe972" cid="ELEM140" type="property" owner="0e81d4d101fb47ca9423172b53f280f4" creator="" creation-date="12/27/2024 18:04:56" visibility="undefined">
       <structural-feature multiplicity="*" type="EducationalResources" type-id="Class:21efb4d8da4040299cec9bd1094aada1" />
     </item>
@@ -3543,7 +3565,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p38ec0ed1c24449e99366c53a9416c6a2_994717431" name="ClassDiagram" order-index="2" overview-order-index="0" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default" show-frame="false" view-location="-369,-109" zoom="0.9">
+      <diagram type="uml-class" id="p38ec0ed1c24449e99366c53a9416c6a2_994717431" name="ClassDiagram" order-index="2" overview-order-index="0" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default" show-frame="false" view-location="-309,161" zoom="0.9">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -4848,7 +4870,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="entity-relationship" id="p8c3a4fbc3a4843aabe943cbd942ca831_464588558" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-29,-196" zoom="0.9">
+      <diagram type="entity-relationship" id="p8c3a4fbc3a4843aabe943cbd942ca831_464588558" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="442,-534">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -4860,12 +4882,12 @@
           </authors>
           <description />
           <creation-date>12/29/2024 16:40:50</creation-date>
-          <change-date>12/29/2024 17:46:40</change-date>
+          <change-date>12/29/2024 18:10:21</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
-          <item id="2b7e2836dcef4b969c84b341249c9352" veid="fa09de711c0a413b9b08e117afb14753" cid="PROP187" type="property" name="Radius" owner="2ff51fc3e9ee47e4a85f33e3c46309fe" creator="" creation-date="12/27/2024 15:32:02" visibility="private">
+          <item id="6d0f0a56637a4a6eb0eab7c2e83b6f27" veid="e568cf5a23ca49bfbc67c9a69a1f1ab5" cid="PROP193" type="property" name="RecordID" owner="4077df7475734762b300c2562e6db3f9" creator="" creation-date="12/27/2024 15:43:42" visibility="private">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
               <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
               <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
@@ -4888,7 +4910,7 @@
                 </alternate-style>
               </alternate-styles>
             </style>
-            <structural-feature type="Double" type-id="Double" />
+            <structural-feature type="String" type-id="Uml.String" />
           </item>
           <item id="0a090f00fa3f4049be44f9f0877a7a33" cid="REL023" type="erd-relationship" creator="" creation-date="12/29/2024 17:09:55" from="2e813044c29b484994ee88282142b841" to="76a0bf27509a4cdf81773d4a49db0b9e">
             <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="0..*">
@@ -4896,6 +4918,56 @@
                 <attribute-pair from-attribute="" to-attribute="" />
               </attribute-pairs>
             </erd-relation>
+          </item>
+          <item id="f3608b14909f494e80ece47565f406b0" veid="1092b09c88cf4efba55aeed6e9142b28" cid="PROP195" type="property" name="EndDate" owner="4077df7475734762b300c2562e6db3f9" creator="" creation-date="12/27/2024 15:43:56" visibility="private">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
+          </item>
+          <item id="48da614bbc3649b5a7fc320501837189" veid="7c304d2a9a33417a9d0582fe60a7b583" cid="PROP196" type="property" name="Type" owner="4077df7475734762b300c2562e6db3f9" creator="" creation-date="12/27/2024 15:44:10" visibility="private">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <structural-feature type="String" type-id="Uml.String" />
           </item>
           <item id="2e813044c29b484994ee88282142b841" cid="ENT004" type="erd-entity" name="Memory" creator="" creation-date="12/29/2024 16:59:40">
             <entity description="" />
@@ -4908,7 +4980,7 @@
               <attribute uid="ab7700050ebac403080106f35afc0ecaa862" cid="ELEM006" name="updated_at" type="" type-id="" nullable="true" creation-date="12/29/2024 17:02:23" />
             </attributes>
           </item>
-          <item id="b6f6206f96494a93b8da31b34ca72d36" veid="1b0f1ea47acf4c4e80f3d671b370f72e" cid="PROP186" type="property" name="ZoneName" owner="2ff51fc3e9ee47e4a85f33e3c46309fe" creator="" creation-date="12/27/2024 15:31:48" visibility="private">
+          <item id="c3c1f8b140fa452bb4f176f50cafe039" veid="c30bed0c5f38474fa43916cff10415c3" cid="PROP198" type="property" name="Dose" owner="4077df7475734762b300c2562e6db3f9" creator="" creation-date="12/27/2024 15:44:19" visibility="private">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
               <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
               <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
@@ -4932,43 +5004,33 @@
               </alternate-styles>
             </style>
             <structural-feature type="String" type-id="Uml.String" />
+          </item>
+          <item id="61122aa9921c4aa7a60a17e26e679e3a" cid="ENT008" type="erd-entity" name="Coordinates" creator="" creation-date="12/29/2024 17:51:45">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a93cecc498dd34b29bcd1ca89799600ae999" cid="EA023" name="coordinatesID" type="" type-id="" foreign-key="true" primary-key="true" nullable="false" creation-date="12/29/2024 17:52:26" />
+              <attribute uid="ae5ebf13430f9458ead00729c88e819ac196" cid="EA024" name="longitude" type="" type-id="" nullable="false" creation-date="12/29/2024 17:52:18" />
+              <attribute uid="a3669c76dd8b043af8ae94117a3fb9136890" cid="EA025" name="lattitude" type="" type-id="" nullable="false" creation-date="12/29/2024 17:52:26" />
+            </attributes>
           </item>
           <item id="169390e4d27f4b1e8dbd0ea9c423f057" cid="ENT007" type="erd-entity" name="SafeZone" creator="" creation-date="12/29/2024 17:46:40">
             <entity description="" />
             <attributes>
               <attribute uid="a58a71faed7ec411f8f7f7be821382f30259" cid="EA018" name="ZoneID" type="" type-id="" primary-key="true" nullable="false" creation-date="12/29/2024 17:47:55" />
-              <attribute uid="ab42be4edf7c348f99a823a37b4430296172" cid="EA019" name="patientID" type="" type-id="" nullable="false" creation-date="12/29/2024 17:47:10" />
-              <attribute uid="ae8b810da6b044c99b8bfe36945ee5e79478" cid="EA020" name="zoneName" type="" type-id="" nullable="false" creation-date="12/29/2024 17:47:19" />
-              <attribute uid="aff9f80fc911a4eaf925d23427ffe669c328" cid="EA021" name="radius" type="" type-id="" nullable="false" creation-date="12/29/2024 17:47:30" />
-              <attribute uid="a937636b761b844bcb78bc2c5b3be0352986" cid="EA022" name="coordinates" type="" type-id="" nullable="false" creation-date="12/29/2024 17:47:36" />
+              <attribute uid="ab42be4edf7c348f99a823a37b4430296172" cid="EA019" name="patientID" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:47:10" />
+              <attribute uid="ae8b810da6b044c99b8bfe36945ee5e79478" cid="EA020" name="radius" type="Real" type-id="Uml.Real" nullable="false" creation-date="12/29/2024 17:47:19" />
+              <attribute uid="aff9f80fc911a4eaf925d23427ffe669c328" cid="EA021" name="zoneName" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:47:30" />
+              <attribute uid="a937636b761b844bcb78bc2c5b3be0352986" cid="EA022" name="coordinatesID" type="" type-id="" nullable="false" creation-date="12/29/2024 17:47:36" />
             </attributes>
           </item>
-          <item id="7fcd1ba201944cf5b9e2213eb4f1d6f7" veid="c3a97b011b5446018592f720c397501d" cid="PROP185" type="property" name="PatientID" owner="2ff51fc3e9ee47e4a85f33e3c46309fe" creator="" creation-date="12/27/2024 15:31:36" visibility="private">
-            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
-              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
-              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
-              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
-              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
-              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
-              <background type="solid" colors="#F2F2F2,#F2F2F2" />
-              <border color="#555555" width="2" />
-              <label-connector color="#80000000" dash-style="Dash" />
-              <alternate-styles>
-                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
-                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
-                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
-                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
-                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
-                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
-                  <background type="solid" colors="#203D85,#203D85" />
-                  <border color="#203D85" width="2" />
-                  <label-connector color="#80000000" dash-style="Dash" />
-                </alternate-style>
-              </alternate-styles>
-            </style>
-            <structural-feature type="String" type-id="Uml.String" />
+          <item id="bfd39ac68b1c4305827c44b00aded528" cid="REL024" type="erd-relationship" creator="" creation-date="12/29/2024 17:53:00" from="169390e4d27f4b1e8dbd0ea9c423f057" to="61122aa9921c4aa7a60a17e26e679e3a">
+            <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="1">
+              <attribute-pairs>
+                <attribute-pair from-attribute="" to-attribute="" />
+              </attribute-pairs>
+            </erd-relation>
           </item>
-          <item id="d2042e822adf4e8fa816f95cfe4f7afa" veid="ea14313c3b4c46bfb1239c0ea9b7321e" cid="PROP188" type="property" name="Coordinates" owner="2ff51fc3e9ee47e4a85f33e3c46309fe" creator="" creation-date="12/27/2024 15:32:07" visibility="private">
+          <item id="81db226413d3406a8a57b9c64bafe77e" veid="02b96a56529d48c3a1cbdcbd0a8dedd6" cid="PROP199" type="property" name="MedicalHistory" owner="6a5b93bb5ffc433fae53b23856ca60e3" creator="" creation-date="12/27/2024 15:48:39" visibility="private">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
               <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
               <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
@@ -4991,7 +5053,7 @@
                 </alternate-style>
               </alternate-styles>
             </style>
-            <structural-feature type="Coordinates" type-id="Class:e329b962c21145b980dbcdbeae28d3dd" />
+            <structural-feature multiplicity="List" type="MedicalRecord" type-id="Class:e63625a12d6d4fc09ff3cf377799f1c8" />
           </item>
           <item id="76a0bf27509a4cdf81773d4a49db0b9e" cid="ENT005" type="erd-entity" name="MemoryImage" creator="" creation-date="12/29/2024 17:03:50">
             <entity description="" />
@@ -5002,7 +5064,16 @@
               <attribute uid="ae04674186c0f4d5794944d5090885af7659" cid="ELEM011" name="memoryID" type="" type-id="" nullable="false" creation-date="12/29/2024 17:07:37" />
             </attributes>
           </item>
-          <item id="1822ba0fe9d044cda7c1e68dc2d41912" veid="8cfa8a2b7535465c9b872bb301219ebc" cid="PROP184" type="property" name="ZoneID" owner="2ff51fc3e9ee47e4a85f33e3c46309fe" creator="" creation-date="12/27/2024 15:31:30" visibility="private">
+          <item id="e18dad1097c44dda9c669f05aa6f73b9" cid="ENT006" type="erd-entity" name="Appointment" creator="" creation-date="12/29/2024 17:11:58">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a64c841bc689d4aeb930ce56ec7c14ce5250" cid="ELEM012" name="appointmentID" type="String" type-id="Uml.String" primary-key="true" nullable="false" creation-date="12/29/2024 17:13:22" />
+              <attribute uid="a21aac357e55b4763bffa688aabb855c2192" cid="ELEM015" name="doctorName" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:12:56" />
+              <attribute uid="ad61906dbd43d4911a57a995e8f2213ce666" cid="ELEM016" name="clinicLocation" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:13:02" />
+              <attribute uid="ac83dc7a8f1034cf9a39fe21950ab2e2d579" cid="ELEM017" name="date" type="DateTime" type-id="Uml.DateTime" nullable="false" creation-date="12/29/2024 17:13:07" />
+            </attributes>
+          </item>
+          <item id="36e8085025e04225bb00cbfe563fdff7" veid="3e08fbc755064842bb1543fec8fde50f" cid="PROP197" type="property" name="Details" owner="4077df7475734762b300c2562e6db3f9" creator="" creation-date="12/27/2024 15:44:14" visibility="private">
             <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
               <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
               <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
@@ -5027,14 +5098,33 @@
             </style>
             <structural-feature type="String" type-id="Uml.String" />
           </item>
-          <item id="e18dad1097c44dda9c669f05aa6f73b9" cid="ENT006" type="erd-entity" name="Appointment" creator="" creation-date="12/29/2024 17:11:58">
+          <item id="be2a2720954842e98eb788ecf27c00fa" cid="ENT009" type="erd-entity" name="MedicalHistory" creator="" creation-date="12/29/2024 17:57:50">
             <entity description="" />
-            <attributes>
-              <attribute uid="a64c841bc689d4aeb930ce56ec7c14ce5250" cid="ELEM012" name="appointmentID" type="String" type-id="Uml.String" primary-key="true" nullable="false" creation-date="12/29/2024 17:13:22" />
-              <attribute uid="a21aac357e55b4763bffa688aabb855c2192" cid="ELEM015" name="doctorName" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:12:56" />
-              <attribute uid="ad61906dbd43d4911a57a995e8f2213ce666" cid="ELEM016" name="clinicLocation" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:13:02" />
-              <attribute uid="ac83dc7a8f1034cf9a39fe21950ab2e2d579" cid="ELEM017" name="date" type="DateTime" type-id="Uml.DateTime" nullable="false" creation-date="12/29/2024 17:13:07" />
-            </attributes>
+          </item>
+          <item id="636b30d8a9a0410a945229ec3349957b" veid="a860de63c23440e0ba83edc614fb784d" cid="PROP194" type="property" name="StartDate" owner="4077df7475734762b300c2562e6db3f9" creator="" creation-date="12/27/2024 15:43:51" visibility="private">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+              <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+              <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+              <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+              <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+              <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+              <background type="solid" colors="#F2F2F2,#F2F2F2" />
+              <border color="#555555" width="2" />
+              <label-connector color="#80000000" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#203D85,#203D85" />
+                  <border color="#203D85" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <structural-feature type="DateTime" type-id="Uml.DateTime" />
           </item>
         </abstract-items>
         <layer id="42cdd7c2c9ea4c2c940e264fabfb6899" name="Default" visible="true" enabled="true" locked="false">
@@ -5056,17 +5146,39 @@
             <relation from="2e813044c29b484994ee88282142b841" from-iid="40cd3579f25246e4a8bb24593dfbfa0e" to="76a0bf27509a4cdf81773d4a49db0b9e" to-iid="d9c7af347dbb4908b6a2eda189c196ac" />
           </item>
           <item id="e18dad1097c44dda9c669f05aa6f73b9" iid="e79e0b8a90004da2a1d014054b42652b" creation-date="12/29/2024 17:11:58" order-index="3" type="entity">
-            <layout ax="506" ay="-196" awidth="244" aheight="116" x="506" y="-196" width="244" height="116" />
+            <layout ax="143" ay="137.5" awidth="244" aheight="116" x="143" y="137.5" width="244" height="116" />
             <erd-entity show-nullability="true" />
           </item>
-          <item id="2ff51fc3e9ee47e4a85f33e3c46309fe" iid="103c51240c3f448bbba64926eebc0427" show-fields="true" creation-date="12/27/2024 15:30:54" order-index="0" type="entity">
-            <layout ax="229" ay="-80" awidth="184" aheight="193" x="229" y="-80" width="184" height="191" />
+          <item id="169390e4d27f4b1e8dbd0ea9c423f057" iid="20d9b430a781404eab445141532a3886" creation-date="12/29/2024 17:46:40" order-index="4" type="entity">
+            <layout ax="98" ay="-148" awidth="202" aheight="133" x="98" y="-148" width="202" height="133" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="61122aa9921c4aa7a60a17e26e679e3a" iid="638f010080cb4ccf8ab242bffe618d6d" creation-date="12/29/2024 17:51:45" order-index="5" type="entity">
+            <layout ax="379" ay="-126.5" awidth="202" aheight="90" x="379" y="-126.5" width="202" height="90" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="bfd39ac68b1c4305827c44b00aded528" iid="335ce9b5b60e49a9b267e25905c5d966" creation-date="12/29/2024 17:53:00" order-index="6" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="301" y1="-82" x2="378" y2="-82" start-border-pos="0.37406015037593987" end-border-pos="0.8763888888888889" name-position="0,20">
+              <points>
+                <point x="301" y="-82" />
+                <point x="378" y="-82" />
+              </points>
+            </layout>
+            <relation from="169390e4d27f4b1e8dbd0ea9c423f057" from-iid="20d9b430a781404eab445141532a3886" to="61122aa9921c4aa7a60a17e26e679e3a" to-iid="638f010080cb4ccf8ab242bffe618d6d" />
+          </item>
+          <item id="4077df7475734762b300c2562e6db3f9" iid="e542b04f404d4b10808b48169c33faa4" show-fields="true" creation-date="12/27/2024 15:39:35" order-index="0" type="entity">
+            <layout ax="595" ay="-401" awidth="200" aheight="190" x="595" y="-401" width="200" height="190" />
             <classifier />
             <class />
           </item>
-          <item id="169390e4d27f4b1e8dbd0ea9c423f057" iid="20d9b430a781404eab445141532a3886" creation-date="12/29/2024 17:46:40" order-index="4" type="entity">
-            <layout ax="1020" ay="-80" awidth="164" aheight="161" x="1020" y="-75" width="140" height="160" />
+          <item id="be2a2720954842e98eb788ecf27c00fa" iid="f31a175637ff4751b550649b42536d25" creation-date="12/29/2024 17:57:50" order-index="7" type="entity">
+            <layout ax="825" ay="-439" awidth="244" aheight="228" x="825" y="-439" width="244" height="228" />
             <erd-entity show-nullability="true" />
+          </item>
+          <item id="6a5b93bb5ffc433fae53b23856ca60e3" iid="2623f95328764d5d981241f134fdea7e" show-fields="true" creation-date="12/27/2024 15:46:47" order-index="0" type="entity">
+            <layout ax="1107" ay="-451" awidth="257" aheight="113" x="1107" y="-451" width="257" height="113" />
+            <classifier />
+            <class />
           </item>
         </layer>
       </diagram>
