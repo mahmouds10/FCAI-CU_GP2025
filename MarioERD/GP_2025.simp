@@ -33,7 +33,7 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="Entity" />
-        <value>9</value>
+        <value>11</value>
       </counter>
       <counter>
         <item-type type-id="enumeration" type="Enumeration" />
@@ -47,7 +47,7 @@
       </counter>
       <counter>
         <item-type type-id="property" type="Property" />
-        <value>200</value>
+        <value>208</value>
       </counter>
       <counter>
         <item-type type-id="generalization" type="Generalization" />
@@ -59,7 +59,7 @@
       </counter>
       <counter>
         <item-type type-id="universal-connector" type="Universal Connector" />
-        <value>66</value>
+        <value>74</value>
       </counter>
       <counter>
         <item-type type-id="template-parameter" type="Template Parameter" />
@@ -99,7 +99,7 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="Entity" />
-        <value>10</value>
+        <value>12</value>
       </counter>
       <counter>
         <item-type type-id="erd-relationship" type="Relationship" />
@@ -131,7 +131,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Erd.ErdEntityAttribute</type>
-        <value>33</value>
+        <value>40</value>
       </counter>
     </fields>
   </counters>
@@ -3525,7 +3525,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p38ec0ed1c24449e99366c53a9416c6a2_994717431" name="ClassDiagram" order-index="2" overview-order-index="0" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default" show-frame="false" view-location="-309,161" zoom="0.9">
+      <diagram type="uml-class" id="p38ec0ed1c24449e99366c53a9416c6a2_994717431" name="ClassDiagram" order-index="2" overview-order-index="0" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default" show-frame="false" view-location="-309,591" zoom="0.9">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -4830,7 +4830,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="entity-relationship" id="p8c3a4fbc3a4843aabe943cbd942ca831_464588558" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="78,186">
+      <diagram type="entity-relationship" id="p8c3a4fbc3a4843aabe943cbd942ca831_464588558" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="120,-456">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -4842,11 +4842,19 @@
           </authors>
           <description />
           <creation-date>12/29/2024 16:40:50</creation-date>
-          <change-date>12/29/2024 18:21:54</change-date>
+          <change-date>12/29/2024 18:48:30</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
+          <item id="8e013a3e092b42dca5b5550f1ff843f4" cid="ENT010" type="erd-entity" name="ImportantData" creator="" creation-date="12/29/2024 18:44:49">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a6e9c3fd635924972be36785e5be967bd944" cid="EA033" name="importantDateID" type="" type-id="" primary-key="true" nullable="false" creation-date="12/29/2024 18:45:56" />
+              <attribute uid="a2689f3f0d8bc4e7188219cf78a191b8a2" cid="EA034" name="title" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 18:45:26" />
+              <attribute uid="a0324198d6fae42caa312de0a20499b84997" cid="EA035" name="date" type="DateTime" type-id="Uml.DateTime" nullable="false" creation-date="12/29/2024 18:45:34" />
+            </attributes>
+          </item>
           <item id="0a090f00fa3f4049be44f9f0877a7a33" cid="REL023" type="erd-relationship" creator="" creation-date="12/29/2024 17:09:55" from="2e813044c29b484994ee88282142b841" to="76a0bf27509a4cdf81773d4a49db0b9e">
             <erd-relation type="Identifying" multiplicity-from="1" multiplicity-to="0..*">
               <attribute-pairs>
@@ -4881,6 +4889,15 @@
               <attribute uid="ae8b810da6b044c99b8bfe36945ee5e79478" cid="EA020" name="radius" type="Real" type-id="Uml.Real" nullable="false" creation-date="12/29/2024 17:47:19" />
               <attribute uid="aff9f80fc911a4eaf925d23427ffe669c328" cid="EA021" name="zoneName" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 17:47:30" />
               <attribute uid="a937636b761b844bcb78bc2c5b3be0352986" cid="EA022" name="coordinatesID" type="" type-id="" nullable="false" creation-date="12/29/2024 17:47:36" />
+            </attributes>
+          </item>
+          <item id="668d2c32bfc94f6aa2976aa51dc5e1c2" cid="ENT011" type="erd-entity" name="Medicine" creator="" creation-date="12/29/2024 18:46:52">
+            <entity description="" />
+            <attributes>
+              <attribute uid="a3bfbfe16a54d401fa6163353bc0d67e2552" cid="EA036" name="medicineID" type="" type-id="" primary-key="true" nullable="false" creation-date="12/29/2024 18:47:44" />
+              <attribute uid="ade5f67a7ef374ee7922109d0486190e7996" cid="EA037" name="name" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 18:47:55" />
+              <attribute uid="a97f69ea3afeb43718ff8f156e08d2762821" cid="EA038" name="dose" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 18:48:07" />
+              <attribute uid="a45115bcca54d41b3bfcaae2f704e5a44704" cid="EA039" name="instructions" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 18:48:16" />
             </attributes>
           </item>
           <item id="bfd39ac68b1c4305827c44b00aded528" cid="REL024" type="erd-relationship" creator="" creation-date="12/29/2024 17:53:00" from="169390e4d27f4b1e8dbd0ea9c423f057" to="61122aa9921c4aa7a60a17e26e679e3a">
@@ -4960,7 +4977,15 @@
             <relation from="169390e4d27f4b1e8dbd0ea9c423f057" from-iid="20d9b430a781404eab445141532a3886" to="61122aa9921c4aa7a60a17e26e679e3a" to-iid="638f010080cb4ccf8ab242bffe618d6d" />
           </item>
           <item id="be2a2720954842e98eb788ecf27c00fa" iid="f31a175637ff4751b550649b42536d25" creation-date="12/29/2024 17:57:50" order-index="7" type="entity">
-            <layout ax="787" ay="-390" awidth="244" aheight="161" x="787" y="-390" width="244" height="161" />
+            <layout ax="98" ay="-381" awidth="244" aheight="161" x="98" y="-381" width="244" height="161" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="8e013a3e092b42dca5b5550f1ff843f4" iid="ea1f3d00d58644d9aca37471e867c3da" creation-date="12/29/2024 18:44:49" order-index="8" type="entity">
+            <layout ax="475" ay="-381" awidth="224" aheight="90" x="475" y="-381" width="224" height="90" />
+            <erd-entity show-nullability="true" />
+          </item>
+          <item id="668d2c32bfc94f6aa2976aa51dc5e1c2" iid="e637c0e7f39d41aa8fd03c3afec6092c" creation-date="12/29/2024 18:46:52" order-index="9" type="entity">
+            <layout ax="812" ay="-392.5" awidth="197" aheight="116" x="812" y="-392.5" width="140" height="116" />
             <erd-entity show-nullability="true" />
           </item>
         </layer>
