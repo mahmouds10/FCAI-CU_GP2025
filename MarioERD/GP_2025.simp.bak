@@ -3572,7 +3572,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="p38ec0ed1c24449e99366c53a9416c6a2_994717431" name="ClassDiagram" order-index="2" overview-order-index="0" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default" show-frame="false" view-location="-353,501" zoom="0.9">
+      <diagram type="uml-class" id="p38ec0ed1c24449e99366c53a9416c6a2_994717431" name="ClassDiagram" order-index="2" overview-order-index="0" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default" show-frame="false" view-location="119,501" zoom="0.9">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -5004,7 +5004,7 @@
             <attributes>
               <attribute uid="abaa57ea25b4446eb8b9740961b50c1df4" cid="EA044" name="gameID" type="" type-id="" foreign-key="true" primary-key="true" nullable="false" creation-date="12/29/2024 19:16:03" />
               <attribute uid="a8236912db1774cf4938293ac64fbd57e64" cid="EA045" name="gameName" type="String" type-id="Uml.String" nullable="false" creation-date="12/29/2024 19:15:53" />
-              <attribute uid="ae52a2e44b2ad447b863fa50c045df55b837" cid="EA046" name="difficulty" type="Integer" type-id="Uml.Integer" nullable="false" creation-date="12/29/2024 19:16:15" />
+              <attribute uid="ae52a2e44b2ad447b863fa50c045df55b837" cid="EA046" name="difficulty" type="Integer" type-id="Uml.Integer" nullable="false" default-value="0" creation-date="12/29/2024 19:16:15" />
             </attributes>
           </item>
           <item id="37652b2881604c09bab1facb7d1be4de" cid="ENT013" type="erd-entity" name="GameHistory" creator="" creation-date="12/29/2024 19:18:17">
@@ -5127,18 +5127,18 @@
             <relation from="e18dad1097c44dda9c669f05aa6f73b9" from-iid="e79e0b8a90004da2a1d014054b42652b" to="ce889304f6fa4949bf938b4d64bc7499" to-iid="5239df243ad24c94bf332ad850293dcd" />
           </item>
           <item id="ef43aca0acb4411891c17db546b09161" iid="df3d01932e1b4edfaf99b3929e5450eb" creation-date="12/29/2024 19:14:47" order-index="13" type="entity">
-            <layout ax="702" ay="159" awidth="235" aheight="90" x="702" y="159" width="235" height="90" />
+            <layout ax="702" ay="159" awidth="235" aheight="104" x="702" y="159" width="235" height="90" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="37652b2881604c09bab1facb7d1be4de" iid="260e7fc33d4249d29a492db97e95b643" creation-date="12/29/2024 19:18:17" order-index="14" type="entity">
-            <layout ax="1040" ay="123.5" awidth="208" aheight="161" x="1040" y="123.5" width="140" height="160" />
+            <layout ax="1040" ay="123.5" awidth="208" aheight="125.5" x="1040" y="123.5" width="140" height="125.5" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="c0190dd88f8444269665b1094726536d" iid="1b4542beb40c47638fa1748d739758c2" creation-date="12/29/2024 19:20:34" order-index="15" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="938" y1="204" x2="1039" y2="204" start-border-pos="0.375" end-border-pos="0.875" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" line-style="oblique" lock-to-fields="false" auto-path="" x1="938" y1="202" x2="1039" y2="194" start-border-pos="0.35329862741323614" end-border-pos="0.8595125722695157" name-position="0,20">
               <points>
-                <point x="938" y="204" />
-                <point x="1039" y="204" />
+                <point x="938" y="202" />
+                <point x="1039" y="194" />
               </points>
             </layout>
             <relation from="ef43aca0acb4411891c17db546b09161" from-iid="df3d01932e1b4edfaf99b3929e5450eb" to="37652b2881604c09bab1facb7d1be4de" to-iid="260e7fc33d4249d29a492db97e95b643" />
